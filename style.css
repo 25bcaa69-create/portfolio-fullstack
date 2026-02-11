@@ -1,0 +1,216 @@
+/* =====================
+   General Styles
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.center-content {
+    text-align: center;
+}
+
+/* =====================
+   Header
+===================== */
+header {
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: #fff;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Header Social Icons */
+.header-socials {
+    margin: 20px 0;
+}
+
+.header-socials a {
+    color: #fff;
+    font-size: 1.7em;
+    margin: 0 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header-socials a:hover {
+    transform: translateY(-5px);
+    color: #222;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    color: #4CAF50;
+    font-weight: 700;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #e0e0e0;
+}
+
+/* =====================
+   Sections
+===================== */
+section {
+    padding: 50px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* Gradient Sections */
+.section-gradient {
+    background: linear-gradient(135deg, #81C784, #4CAF50);
+    padding: 50px 20px;
+    border-radius: 15px;
+    margin: 25px 0;
+}
+
+.section-gradient h2 {
+    color: darkgreen;
+}
+
+.section-gradient p,
+.section-gradient ul {
+    color: #fff;
+}
+
+/* =====================
+   Skills & Certifications
+===================== */
+.skills-list,
+.cert-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills-list li,
+.cert-list li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 22px;
+    font-weight: 500;
+    color: #222;
+    border: 1px solid #4CAF50;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/* Skill separator */
+.skills-list li:not(:last-child)::after {
+    content: "|";
+    color: #4CAF50;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+/* =====================
+   Contact Form
+===================== */
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#contactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#contactForm button {
+    padding: 12px;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    border: none;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contactForm button:hover {
+    background: linear-gradient(135deg, #45a049, #66bb6a);
+}
+
+#response {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+    padding: 25px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: white;
+    border-radius: 10px;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+footer .socials a:hover {
+    color: #222;
+}
