@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
   responseMsg.style.color = "#333";
 
   try {
-    const res = await fetch("http://localhost:5000/api/contact", {
+    const res = await fetch("https://portfolio-fullstack-bnu8.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
